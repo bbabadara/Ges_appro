@@ -1,4 +1,5 @@
 <?php 
+require_once("models/Model.php");
 require_once("models/Produit.php");
 require_once("models/Fournisseur.php");
 require_once("models/Unite.php");
@@ -19,11 +20,11 @@ $approvisionnement=new Approvisionnement();
 $approvisionnements=$approvisionnement->findAll();
 
 
-// require_once("views/approvisionnement/add.html.php");
-// require_once("views/approvisionnement/liste.html.php");
+ require_once("views/approvisionnement/add.html.php");
+ require_once("views/approvisionnement/liste.html.php");
 require_once("views/fournisseur/liste.html.php");
-// require_once("views/categorie/liste.html.php");
-//  require_once("views/produit/liste.html.php");
-// require_once("views/type/liste.html.php");
-// require_once("views/unite/liste.html.php");
+ require_once("views/categorie/liste.html.php");
+ require_once("views/produit/liste.html.php");
+ require_once("views/type/liste.html.php");
+ require_once("views/unite/liste.html.php");
 

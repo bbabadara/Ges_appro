@@ -17,8 +17,8 @@
   </header>
   <main>
     <h2 class="text-center mt-3">Ajout Approvisionnement</h2>
-    <div class="container col-10 mt-3">
-      <form class="row g-3">
+    <div class="container col-10 mt-2">
+      <form class="row g-3 shadow p-3 mb-5 bg-body-tertiary rounded">
       <div class="mb-3 row col-6 mt-5">
     <label for="Date" class="col-sm-2 col-form-label">Date</label>
     <div class="col-md-6">
@@ -86,7 +86,7 @@
 
     <div class="container col-10 mt-5">
     <table class="table">
-  <thead>
+  <thead class="table-primary">
     <tr>
       <th scope="col">Produit</th>
       <th scope="col">Unites</th>

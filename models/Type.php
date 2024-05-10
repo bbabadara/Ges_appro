@@ -1,9 +1,9 @@
 <?php
-class Categorie{
-    public int $idc;
-    public string $libellec;
+class Type {
+    public int $idt;
+    public string $libellet;
   
-    private const SQL_SELECT_ALL="select * from categorie";
+    private const SQL_SELECT_ALL="select * from Type";
     public function findAll(){
         
         $mysqlClient = new PDO(
@@ -13,8 +13,8 @@ class Categorie{
         );
 
     $result = $mysqlClient->query(self::SQL_SELECT_ALL); 
-    $categories = $result->fetchAll(PDO::FETCH_CLASS,"Categorie");
-    return $categories;
+    $Types = $result->fetchAll(PDO::FETCH_CLASS,"Type");
+    return $Types;
     }
     
 }
